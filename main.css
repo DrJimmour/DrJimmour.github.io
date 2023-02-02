@@ -1,0 +1,57 @@
+html {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.logo img {
+  height: 160px;
+  width: 200px;
+}
+
+header {
+  height: 110px;
+  width: 100%;
+  padding: 30px;
+  text-align: left;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  background-image: url("banner.jpg");
+  background-position: 0% 30%;
+}
+
+.menu {
+  font-size: large;
+  color: blue;
+  text-align: left;
+  padding: auto;
+  margin-top: 4px;
+  text-decoration: none;
+  margin-bottom: 8px;
+  display: inline;
+}
+
+body {
+  background-image: url('bg.webp');
+}
+
+#task {
+  font-size: large;
+  vertical-align: middle;
+}
+
+#task img {
+  padding-left: 20px;
+  float: right;
+}
+
+#deadline {
+  background-color: yellow;
+}
+
+#deadline :is(h4, li){
+  color: red;
+
+}
+
+[class = "topic"] {
+  font-style: italic;
+}
