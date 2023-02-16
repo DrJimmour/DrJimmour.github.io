@@ -10,14 +10,17 @@ html {
 header {
   height: 110px;
   width: 100%;
-  padding: 30px;
-  text-align: left;
+  text-align: bottom;
   font-size: 35px;
   color: rgb(0, 0, 0);
   background-image: url("banner.jpg");
-  background-position: 0% 30%;
+  background-size: cover;
+  background-position: 20% 30%;
 }
-
+.banner {
+  position: relative;
+  top: 65%;
+}
 .menu {
   font-size: large;
   color: blue;
@@ -40,7 +43,7 @@ body {
 
 #task img {
   padding-left: 20px;
-  float: right;
+  float: left;
 }
 
 #deadline {
@@ -54,4 +57,28 @@ body {
 
 [class = "topic"] {
   font-style: italic;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px){
+  a{
+    font-size: larger;
+  }
 }

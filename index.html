@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +10,13 @@
 <body>
   <!-- HEADER -->
   <header>
-    <div class="banner">Web Programming...</div>
+    <div class="banner"> Web Programming... </div>
   </header>
 
   <!-- Navbar -->
   <nav>
       <a class="logo" href="#">
-        <img src="logo.png" alt="logo" width="80px" height="80px">
+        <img src="logo.png" alt="logo" width="30%" height="30%">
       </a>
       <ul class="menu">
         <li><a class="active" href="#task">Task</a></li>
@@ -29,6 +29,7 @@
   </nav>
 
   <!-- Main Content -->
+
   <section class="main_content">
     <h1 id="main-heading" class="topic">
       Lab 4 - Designing with CSS 
@@ -37,14 +38,21 @@
     <article id="task">
       <h2 >Task</h2>
       <p>
-        <img src="nature.jpg" alt="" width="300px" height="210">
-        
-        As you have alredy learned in the last lecture, 
-        CSS is about the presentation of the documents
-        like HTML or XML.
-        You need to apply
-        CSS styling rules to make this template HTML file look
-        beautiful and interesting.  
+        <div class="row">
+          <div class="column">
+            <img src="nature.jpg" alt="" width="70%" height="50%">
+          </div>
+          <div class="column">        
+            As you have alredy learned in the last lecture, 
+            CSS is about the presentation of the documents
+            like HTML or XML.
+            You need to apply
+            CSS styling rules to make this template HTML file look
+            beautiful and interesting.  
+          </div>
+        </div>
+
+
       </p>
       <p>
         There are no 
@@ -127,14 +135,22 @@
        through this domain name.
       </p>
       <h3>Info</h3>
-      <p>
-         Insert an image of yourself here.
-         <img src="me.jpg" alt="" width="300px" height="300px">
+      <div class="row">
+        <div class="column">
+          <img src="me.jpg" alt="" width="80%" height="80%">
+        </div>
+        <div class="column">
+          <p>
+            Insert an image of yourself here.
+   
+   
+           <ul>
+             <li>Amirkhan Murzabekov </li>
+           </ul>
+         </p>
+        </div>
+      </div>
 
-        <ul>
-          <li>Amirkhan Murzabekov </li>
-        </ul>
-      </p>
     </article>
     <article id="grading">
       <h2>Grading</h2>
@@ -298,4 +314,5 @@
     </div>
   </footer>
 </body>
+
 </html>
