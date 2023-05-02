@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Personal Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles.css	">
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<h1>Amirkhan Murzabekov</h1>
+			<nav>
+				<ul>
+					<li><a href="../index.html">About</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="fun.html">Fun</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section>
+		<div class="container" style="text-align: center;">
+			<h2>Rock Paper Scissors game</h2>
+			<h3>Choose your weapon:</h3>
+			<button id="rock">Rock</button>
+			<button id="paper">Paper</button>
+			<button id="scissors">Scissors</button>
+
+			<p id="result"></p>
+
+			<script>
+				var rockButton = document.getElementById("rock");
+				var paperButton = document.getElementById("paper");
+				var scissorsButton = document.getElementById("scissors");
+
+				rockButton.addEventListener("click", function () { playGame("rock"); });
+				paperButton.addEventListener("click", function () { playGame("paper"); });
+				scissorsButton.addEventListener("click", function () { playGame("scissors"); });
+
+				function playGame(playerChoice) {
+					// Get the computer's choice
+					var computerChoice = getComputerChoice();
+
+					// Determine the winner
+					var winner = determineWinner(playerChoice, computerChoice);
+
+					// Display the result
+					displayResult(winner, playerChoice, computerChoice);
+				}
+
+				function getComputerChoice() {
+					// Generate a random number between 0 and 2
+					var randomNumber = Math.floor(Math.random() * 3);
+
+					// Map the number to a choice
+					switch (randomNumber) {
+						case 0:
+							return "rock";
+						case 1:
+							return "paper";
+						case 2:
+							return "scissors";
+					}
+				}
+
+				function determineWinner(playerChoice, computerChoice) {
+					if (playerChoice === computerChoice) {
+						return "tie";
+					}
+					else if (playerChoice === "rock" && computerChoice === "scissors" ||
+						playerChoice === "paper" && computerChoice === "rock" ||
+						playerChoice === "scissors" && computerChoice === "paper") {
+						return "player";
+					}
+					else {
+						return "computer";
+					}
+				}
+
+				function displayResult(winner, playerChoice, computerChoice) {
+					var resultElement = document.getElementById("result");
+
+					switch (winner) {
+						case "tie":
+							resultElement.innerHTML = "You chose " + playerChoice + ".<br>The computer chose " + computerChoice + ".<br>It's a tie!";
+							break;
+						case "player":
+							resultElement.innerHTML = "You chose " + playerChoice + ".<br>The computer chose " + computerChoice + ".<br>You win!";
+							break;
+						case "computer":
+							resultElement.innerHTML = "You chose " + playerChoice + ".<br>The computer chose " + computerChoice + ".<br>You lose!";
+							break;
+					}
+				}
+
+			</script>
+
+		</div>
+	</section>
+
+	<section>
+		<div class="container" id="graph" style="text-align: center;">
+			<h2>Monthly visits of this website</h2>
+			<script src="../main.js"></script>
+			<p><i>This data is not real and is generated randomly.</i></p>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 Designed for CSCI 111</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>My Personal Website</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-	<!-- Header -->
 	<header>
 		<div class="container">
 			<h1>Amirkhan Murzabekov</h1>
@@ -15,32 +16,63 @@
 				<ul>
 					<li><a href="index.html">About</a></li>
 					<li><a href="pages/portfolio.html">Portfolio</a></li>
-					<li><a href="#portfolio">Other</a></li>
 					<li><a href="pages/fun.html">Fun</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
+	<hr>
 
-	<!-- About Section -->
-	<section id="about">
+	<section>
 		<div class="container">
 			<h2>About Me</h2>
-			<p>My name is Amirkhan. I am a 4th-year Mathematics student of Nazarbayev University. This website is my humble portfolio.</p>
-            <img src="images/me.jpg" alt="Me"
-                width="400 rem">
+			<h4>My name is Amirkhan. I am a 4th-year Mathematics student of Nazarbayev University. This website is my
+				humble portfolio.</h4>
+			<div class="gallery">
+				<img src="images/me.jpg" alt="Me">
+				<img src="images/me2.jpg" alt="Me2">
+				<img src="images/me3.jpg" alt="Me3">
+			</div>
 		</div>
 	</section>
 
+	<section>
+		<div class="container">
+			<h2>Interests</h2>
+			<h4>As a person who was always fascinated by mathematics, statistics and computer science, it's no wonder
+				that my favorite fields are:</h4>
+			<ul>
+				<li>Data Analysis</li>
+				<li>Machine Learning</li>
+				<li>Computer Vision</li>
+			</ul>
+			<div class="gallery">
+				<img src="images/ml1.png" alt="ML1">
+				<img src="images/ml2.png" alt="ML2">
+				<img src="images/ml3.png" alt="ML3">
+			</div>
+			<p>To learn more about my work, go to <a href="pages/portfolio.html"><b>portfolio</b></a></p>
+		</div>
+	</section>
 
-	<!-- Footer -->
+	<section>
+		<div class="container">
+			<h2>Hobbies</h2>
+			<h4>In the free time I enjoy <b>watching TV-shows, playing video games and learning guitar.</b></h4>
+			<div class="gallery">
+				<img src="images/guitar.jpg" alt="guitar">
+				<img src="images/hobby2.jpg" alt="hobby2">
+				<img src="images/hobby3.png" alt="hobby3">
+			</div>
+		</div>
+	</section>
+
 	<footer>
 		<div class="container">
-			<p>&copy; 2023 My Personal Website</p>
+			<p>&copy; 2023 Designed for CSCI 111</p>
 		</div>
 	</footer>
 
-	<!-- JavaScript -->
-	<script src="main.js"></script>
 </body>
+
 </html>

@@ -1,86 +1,105 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>My Personal Website</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
 
-	<!-- Header -->
+
 	<header>
 		<div class="container">
 			<h1>Amirkhan Murzabekov</h1>
 			<nav>
 				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="../index.html">About</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="fun.html">Fun</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-	<!-- About Section -->
-	<section id="about">
+	<hr>
+
+
+	<section>
 		<div class="container">
-			<h2>About Me</h2>
-			<p>My name is Amirkhan. I love my girlfriend, she's the best. Here's a picture of her.</p>
-            <img src="zhops.jpg" alt="Zhopik"
-                width="400">
+			<h2>Education</h2>
+			<h3 style="text-align:left;">Nazarbayev University, Astana<span style="float:right;">2019 - 2023</span></h3>
+			<p>B.S. in Mathematics (related coursework: Linear Algebra, Probability, Mathematical Statistics, Applied
+				Finite Element Methods).</p>
 		</div>
 	</section>
 
-	<!-- Services Section -->
-	<section id="services">
+
+	<section style="padding: 10px 0;">
 		<div class="container">
-			<h2>Skills</h2>
+			<h2>Experience</h2>
+			<h3 style="text-align:left;">Product analyst intern at Kazakhtelecom<span style="float:right;">July 2022 -
+					September 2022</span></h3>
 			<ul>
-				<li>Data Analysis</li>
-				<li>Machine Learning</li>
-				<li>Hearthstone Droching</li>
+				<li>Worked on real-life datasets for an upcoming Kazakhtelecom project, cleaning and processing more
+					than 10,000
+					data points applying regular expressions.</li>
+				<li>Mapped a list of client addresses to their coordinates implementing geocoding libraries and
+					third-party geocoder
+					APIs (Yandex Maps, 2Gis).</li>
+				<li>Created heat maps to illustrate the accuracy of the work.</li>
+			</ul>
+
+			<h3 style="text-align:left;">DataSci student club member<span style="float:right;">August 2020 - December
+					2021</span></h3>
+			<ul>
+				<li>Organized and conducted data science related events such as meetups with specialists in the field
+					and data
+					science workshops.</li>
+				<li>Organized the first Datathon sponsored by Mobile Telecom with 129 participants, and a prize pool of
+					100,000
+					KZT.</li>
+				<li>Was responsible for SMM and mailing tasks.</li>
+			</ul>
+
+			<h3 style="text-align:left;">Mathematics Tutor, self-employed<span style="float:right;">September 2019 - May
+					2022</span></h3>
+			<ul>
+				<li>Taught middle and high school students to pass standardized entry exams (SAT, TMUA, NUET).</li>
+				<li>Designed educational approach and home assignments individually to each student. </li>
+				<li>Tutored children from low-income families on a voluntary basis.</li>
 			</ul>
 		</div>
 	</section>
 
-	<!-- Portfolio Section -->
-	<section id="portfolio">
+
+	<section>
 		<div class="container">
-			<h2>Portfolio</h2>
-			<div class="gallery">
-				<img src="img1.jpg" alt="Project 1">
-				<img src="img2.jpg" alt="Project 2">
-				<img src="img3.jpg" alt="Project 3">
-				<img src="img4.jpg" alt="Project 4">
-			</div>
+			<h2>Skills</h2>
+			<h3>Programming Languages:</h3>
+			<p>Python, C++, SQL, JavaScript, HTML, CSS, LaTeX</p>
+			<h3>Technologies and Frameworks:</h3>
+			<p>Git, Pandas, Numpy, Matplotlib, PyTorch, Scikit-learn, Geopy</p>
+			<h3>Languages:</h3>
+			<ul>
+				<li style="text-align:left;"><b>Kazakh</b><span style="float:right;"><b>Native</b></span></li>
+				<li style="text-align:left;"><b>English</b><span style="float:right;"><b>Advanced</b></span></li>
+				<li style="text-align:left;"><b>Russian</b><span style="float:right;"><b>Advanced</b></span></li>
+				<li style="text-align:left;"><b>Mandarin Chinese</b><span style="float:right;"><b>Beginner</b></span>
+				</li>
+			</ul>
 		</div>
 	</section>
 
-	<!-- Contact Section -->
-	<section id="contact">
-		<div class="container">
-			<h2>Contact Me</h2>
-			<form>
-				<label for="name">Name</label>
-				<input type="text" id="name" name="name" required>
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" required>
-				<label for="message">Message</label>
-				<textarea id="message" name="message" required></textarea>
-				<input type="submit" value="Send">
-			</form>
-		</div>
-	</section>
 
-	<!-- Footer -->
+
 	<footer>
 		<div class="container">
-			<p>&copy; 2023 My Personal Website</p>
+			<p>&copy; 2023 Designed for CSCI 111</p>
 		</div>
 	</footer>
 
-	<!-- JavaScript -->
-	<script src="script.js"></script>
 </body>
+
 </html>
